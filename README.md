@@ -70,5 +70,5 @@ interface User {
 ```
 
 ## Макет
-![image](https://user-images.githubusercontent.com/34907325/76761753-d2b26380-67b1-11ea-9e81-c59cce69a67f.png)
+![image]
 
