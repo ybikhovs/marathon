@@ -70,5 +70,5 @@ interface User {
 ```
 
 ## Макет
-![image] (https://github.com/ybikhovs/marathon/blob/master/gonki.png)
+![image (https://github.com/ybikhovs/marathon/blob/master/gonki.png)]  
 
