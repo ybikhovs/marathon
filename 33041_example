@@ -56,5 +56,13 @@ ExpirationDate=2022-12-31
 KillDate=
 IsDemo=yes
 
+return new EduCtrContractTemplateSpoBasePrint(
+        session: session,    // сессия
+        template: template,  // шаблон
+        customer: DataAccessServices.dao().get(CtrContractVersionContractor.class, customerId),
+        provider: DataAccessServices.dao().get(CtrContractVersionContractor.class, providerId),
+        versionTemplateData: DataAccessServices.dao().get(EduCtrContractVersionTemplateData.class, versionTemplateDataId),
+        eduPromise: DataAccessServices.dao().get(EduCtrEducationPromise.class, eduPromiseId)
+
 
 Sign=875619C158D3A1CA9CA31738EA4777F060957323560DF595DE2654C244A562D5A223115E8BE1ECBDB64C3C13F6114ECDD9E279F2DF8757DD7F5E808F157FC069
