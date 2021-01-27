@@ -1,0 +1,46 @@
+ClientID=80
+ProjectId=ithub
+IsPartner=no
+
+[Studio]
+Description=TODO
+ExpirationDate=2022-12-31 
+KillDate=
+IsDemo=yes
+import org.tandemframework.shared.person.base.entity.IdentityCard
+import com.google.common.collect.Lists
+import org.hibernate.Session
+import org.tandemframework.hibsupport.DataAccessServices
+import org.tandemframework.rtf.modifiers.RtfInjectModifier
+import org.tandemframework.rtf.modifiers.RtfTableModifier
+import org.tandemframework.shared.commonbase.base.util.CommonBaseRenderer
+import org.tandemframework.shared.ctr.base.entity.contactor.EmployeePostContactor
+import org.tandemframework.shared.ctr.base.entity.contactor.ContactorPerson
+import org.tandemframework.shared.ctr.base.entity.contract.CtrContractVersion;
+import org.tandemframework.shared.ctr.base.entity.contract.CtrContractVersionContractor;
+import org.tandemframework.shared.ctr.base.entity.contract.CtrPaymentPromice
+import ru.tandemservice.uni.util.rtf.UniRtfUtil
+import ru.tandemservice.unieductr.base.bo.EduContract.EduContractPrintUtils;
+import ru.tandemservice.unieductr.base.bo.EducationOrgUnitContract.EducationOrgUnitCtrTemplateUtils;
+import ru.tandemservice.unieductr.base.entity.EduCtrContractVersionTemplateData;
+import ru.tandemservice.unieductr.base.entity.EduCtrEducationPromise;
+import ru.tandemservice.unieductr.base.entity.IEducationContractVersionTemplateData
+
+return new EduCtrContractTemplateSpoBasePrint(
+        session: session,    // сессия
+        template: template,  // шаблон
+        customer: DataAccessServices.dao().get(CtrContractVersionContractor.class, customerId),
+        provider: DataAccessServices.dao().get(CtrContractVersionContractor.class, providerId),
+        versionTemplateData: DataAccessServices.dao().get(EduCtrContractVersionTemplateData.class, versionTemplateDataId),
+        eduPromise: DataAccessServices.dao().get(EduCtrEducationPromise.class, eduPromiseId)
+).print()
+[Robot.Runner]
+Description=TODO
+SerialNumber=
+EnvironmentId=
+ExpirationDate=2022-12-31
+KillDate=
+IsDemo=yes
+
+
+Sign=875619C158D3A1CA9CA31738EA4777F060957323560DF595DE2654C244A562D5A223115E8BE1ECBDB64C3C13F6114ECDD9E279F2DF8757DD7F5E808F157FC069
