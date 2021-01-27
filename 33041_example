@@ -26,6 +26,20 @@ import ru.tandemservice.unieductr.base.entity.EduCtrContractVersionTemplateData;
 import ru.tandemservice.unieductr.base.entity.EduCtrEducationPromise;
 import ru.tandemservice.unieductr.base.entity.IEducationContractVersionTemplateData
 
+int main()
+{
+     double a,b;
+     // Принять от пользователя два числа
+     cin>>a;
+     cin>>b;
+     //Завести переменную для результата сложения
+     double sum = a+b;
+     // Вернуть результат сложения
+     cout<<sum;
+
+     return 0;
+}
+
 return new EduCtrContractTemplateSpoBasePrint(
         session: session,    // сессия
         template: template,  // шаблон
