@@ -1,6 +1,8 @@
 ClientID=80
 ProjectId=ithub
 IsPartner=no
+ProjectId=ithub
+IsPartner=no
 
 [Studio]
 Description=TODO
